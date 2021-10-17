@@ -1,0 +1,75 @@
+.register-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.register {
+  position: absolute;
+  top: calc(50vh - 221px);
+  left: calc(50vw - 320px);
+  z-index: 10;
+
+  width: 640px;
+  height: 442px;
+
+  background: #fafafa;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+}
+
+.register__title {
+  padding: 20px 16px;
+}
+
+.register-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 26px 21px;
+
+  background-color: #f1f0f0;
+}
+
+.register-form__field-file {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  margin-bottom: 30px;
+  padding: 10px 0 10px 60px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 44px;
+    height: 36px;
+
+    background-image: url(asset/add-photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.register-form__btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}

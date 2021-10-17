@@ -1,0 +1,29 @@
+.select{
+  max-width: 256px;
+  margin-bottom: 37px;
+
+  border-bottom: 1px solid #E5E5E5;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.select__title {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+}
+
+.select__field{
+  margin-bottom: 16px;
+
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+
+  cursor: pointer;
+}

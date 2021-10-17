@@ -1,0 +1,90 @@
+.game-field__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  cursor: pointer;
+
+  perspective: 1000px;
+
+  &--8 {
+    width: 168px;
+    height: 168px;
+
+    &:nth-child(4n) {
+      margin-bottom: 41px;
+    }
+  }
+
+  &--18 {
+    width: 120px;
+    height: 120px;
+
+    &:nth-child(6n) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &--32 {
+    width: 90px;
+    height: 90px;
+
+    &:nth-child(8n) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--stop-events {
+    pointer-events: none;
+  }
+
+  &--match,
+  &--unmatch {
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--match {
+    &::before {
+      background-color: rgb(119, 238, 119, 0.4);
+    }
+  }
+
+  &--unmatch {
+    &::before {
+      background-color: rgba(238, 119, 119, 0.4);
+    }
+  }
+}
+
+.game-field__card-shirt {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('asset/CardPreview.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: 1s;
+
+  &--rotate {
+    transform: rotateY(180deg);
+  }
+}

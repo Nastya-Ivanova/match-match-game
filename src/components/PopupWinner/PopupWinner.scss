@@ -1,0 +1,66 @@
+.popup-winner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-winner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  position: absolute;
+  top: calc(50vh - 65px);
+  left: calc(50vw - 180px);
+  z-index: 10;
+
+  width: 360px;
+  height: 130px;
+
+  padding: 20px 16px 7px;
+
+  font-family: Roboto;
+  font-size: 14px;
+
+  background-color: #fff;
+}
+
+.popup-winner__text {
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-winner__button {
+  padding: 10px 16px;
+
+  font-weight: 700;
+  line-height: 16px;
+
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 2px;
+
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+
+  cursor: pointer;
+
+  &--register{
+    margin-right: 20px;
+
+    color: #fff;
+    background-color: #2196f3;
+  }
+
+  &--cancel{
+    background-color: #e3f2fd;
+    color: #2196f3;
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-bottom: 33px;
+  padding: 0 20px;
+
+  background-color: #2196f3;
+}
+
+.header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 520px;
+}
+
+.header__button{
+  align-self: center;
+
+  &--hidden{
+    display: none;
+  }
+}

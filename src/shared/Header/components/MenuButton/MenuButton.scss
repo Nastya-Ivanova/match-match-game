@@ -1,0 +1,57 @@
+.menu__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: relative;
+
+  width: 96px;
+  min-height: 64px;
+
+  padding-bottom: 9px;
+
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-transform: capitalize;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 24px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--about-game::before {
+    background-image: url('asset/IconAboutGame.png');
+  }
+
+  &--best-score::before {
+    background-image: url('asset/IconBestScore.png');
+  }
+
+  &--game-settings::before {
+    background-image: url('asset/IconGameSettings.png');
+  }
+
+  &:hover,
+  &:focus,
+  &--active{
+    background-color: #1E88E5;
+  }
+}
